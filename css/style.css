@@ -1,0 +1,45 @@
+body{
+    background-image: url('https://ntandomabuto.github.io/images/Don%20Life%20Fashion%20Store.png');
+    background-size:cover;
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    padding: 5px;
+    border-radius: 2rem;
+    color: aliceblue;
+}
+
+nav{
+    background-color: beige;
+}
+
+footer{
+    background-color: aliceblue;
+    
+}
+
+.gif{
+    /* width: 10%;
+  height: 10%; */
+  position: relative;
+  animation-name: gif;
+  animation-duration: 3s;  
+  animation-delay: 1;
+  animation-fill-mode:backwards; 
+}
+
+@keyframes gif{
+    from {left: 0px;}
+  to {left: 300px;}
+}
+
+.btn{
+    color: black;
+}
