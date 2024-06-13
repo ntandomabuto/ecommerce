@@ -37,7 +37,11 @@ let item12 = new CreateItem(12, 'Skinny Tie', 'Clothes', 'https://th.bing.com/th
 let items = [item1, item2, item3, item4, item5, item6, item7, item8,item9, item10, item11, item12]
 
 localStorage.setItem('items', JSON.stringify(items))
-let purchasedItems = []
+
+let itemsQuan = JSON.parse(localStorage.getItem('purchasedItems'))
+
+let purchasedItems = itemsQuan || [] 
+console.log(itemsQuan);
 
 let sortButton = document.querySelector('.sort')
 
@@ -93,17 +97,17 @@ items.forEach(item => {
 })
 
 let purchasedButtons = document.querySelectorAll('#purchase')
-let purchaseItems = JSON.parse(localStorage.getItem('purchasedItems')) ||[]
+let purchaseItems = JSON.parse(localStorage.getItem('purchasedItems')) || []
 
 function addToCheck(id) {
   let [item] = items.filter(object => object.id == +id)
   purchasedItems.push(item)
-
+    console.log(item);
 }
 
 purchasedButtons.forEach(button => {
     button.addEventListener('click', (event) => {
         addToCheck(event.target.value);
         localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems))
-        })
-        })
+    })
+})
