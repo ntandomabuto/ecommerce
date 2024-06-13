@@ -6,6 +6,15 @@
     background-image: url('https://ntandomabuto.github.io/images/N.png');
             background-size: 1500px 800px;
             background-repeat: no-repeat;
+            overflow: hidden;
+}
+#pro{
+    border-radius: 3rem;
+}
+#pro a{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 2rem;
 }
 .about{
     background-image: url('https://th.bing.com/th/id/OIP._AqURUHRk3sPCtIYJP6JaQHaE8?pid=ImgDet&w=179&h=119&c=7&dpr=1,3');
@@ -13,8 +22,33 @@
             background-repeat: no-repeat;
             background-blend-mode:luminosity;
 }
-.about >footer{
+.about >footer,.footer-contact{
     position: fixed;
+}
+
+#cont-body{
+    background-image: linear-gradient(grey,black,grey);
+    color: white;
+}
+.container-cont{
+    /* align-self: center; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+#cont{
+    margin: 5px;
+    background: grey;
+    text-decoration: solid black ;
+    border-radius: 2rem;
+}
+#cont:hover{
+    color: white;
+    background-color: black;
+}
+
+.form-group{
+    margin: 20px;
 }
 .checkimg{
     width: 250px;

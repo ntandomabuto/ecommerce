@@ -47,7 +47,7 @@ let sortButton = document.querySelector('.sort')
 
 sortButton.addEventListener('click', () => {
     items.sort((a, b) => {
-        if (a.category < b.category) return -1;
+        if (a.price < b.price) return -1;
         return 0;
     });
     main.innerHTML = '';
@@ -63,6 +63,7 @@ sortButton.addEventListener('click', () => {
                     `
     });
 });
+
 let search = document.querySelector('form');
 
 search.addEventListener('submit', (event) => {
