@@ -25,7 +25,7 @@
     background-image: linear-gradient(grey, white);
 }
 
-#purchase,#viewMore{
+#purchase{
     background-color: rgb(98, 122, 122);
     border-radius: 2rem;
     width: 45%;
@@ -82,14 +82,29 @@ a{
     text-align: center;
     margin-left: 250px;
 } */
-.total{
+.total,.delete-btn{
     color: black;
     background-color: grey;
     border-radius: 10px;
     align-items: center;
 }
+
+.container-check{
+    display: flex;
+}
+.footer-check{
+    bottom: 0;
+    position: fixed;
+}
 th,td{   
-    width:250px
+    width:250px;
+    text-align: center;
+}
+
+#thankYou{
+    margin-top: 35vh;
+    background-color: rgb(186, 162, 162);
+    border-radius: 2rem;
 }
 #h4{
     text-align: center;
